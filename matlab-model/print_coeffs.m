@@ -2,7 +2,9 @@
 ## Convert signed coeffs to hex:
 ##
 
-load coeffs.txt
+#load coeffs.txt
+#coeffs = dlmread("coeffs.txt");
+coeffs = dlmread("coeffs.txt", "", 1, 0); #pomija 1. linię
 
 k = coeffs(:,1);
 a = coeffs(:,2);
